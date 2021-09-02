@@ -97,9 +97,8 @@
 			minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
 			hourHand.style.transform   = `rotate(${hoursDegrees}deg)`;
 			secondsDegrees += 6;
-			minutesDegrees += .1;
+			minutesDegrees += 0.1;
 			hoursDegrees   += 3 / 360;
-			console.log([hoursDegrees, minutesDegrees, secondsDegrees]);
 		}
 
 		setInterval( setDate, 1000 );
